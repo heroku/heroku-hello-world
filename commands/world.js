@@ -15,7 +15,9 @@ module.exports = {
     if (context.flags.user) {
       cli.log(`Hello, ${context.flags.user}!`);
     } else {
-      cli.log('Hello, World!');
+      cli.log(`use cyan to ${cli.color.cyan('highlight')} a word`);
+      cli.log(cli.color.red('use red for error text'));
+      cli.log(cli.color.yellow('use yellow for warning text'));
     }
   }
 };
