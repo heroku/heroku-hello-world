@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-let cli = require('heroku-cli-util');
+let cli = require('heroku-cli-util')
 
 module.exports = {
   topic: 'hello',
@@ -13,9 +13,9 @@ module.exports = {
   ],
   run: function (context) {
     if (context.flags.user) {
-      cli.log(`Hello, ${context.flags.user}!`);
+      cli.log(`Hello, ${context.flags.user}!`)
     } else {
-      cli.log('Hello, World!');
+      cli.log('Hello, World!')
     }
   }
-};
+}
