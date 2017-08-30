@@ -1,7 +1,7 @@
 {
   "name": "heroku-hello-world",
   "description": "basic example heroku plugin",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "author": "Jeff Dickey @dickeyxxx",
   "repository": "heroku/heroku-hello-world",
   "bugs": {
