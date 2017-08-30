@@ -1,0 +1,20 @@
+---
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:8.2.1
+    working_directory: ~/cli-plugin
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-{{ checksum "yarn.lock" }}
+            - node-modules-
+      - run: yarn
+      - run: yarn test -- --coverage && bash <(curl -s https://codecov.io/bash)
+      - save_cache:
+          key: node-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+            - /usr/local/share/.cache/yarn
