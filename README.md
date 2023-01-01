@@ -3,3 +3,4 @@
 [![npm version](https://badge.fury.io/js/heroku-hello-world.svg)](http://badge.fury.io/js/heroku-hello-world)
 
 [Dev Center: Developing CLI Plugins](https://devcenter.heroku.com/articles/developing-cli-plugins)
+test
